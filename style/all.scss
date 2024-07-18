@@ -1,0 +1,24 @@
+@import '../node_modules/bootstrap/scss/functions.scss';
+@import '../node_modules/bootstrap/scss/mixins.scss';
+@import './variables';
+
+
+@font-face {
+  font-family: "League Spartan";
+  src: url('../public/font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format(truetype);
+  font-weight: normal;
+  font-size: normal;
+}
+
+:root {
+  // --bs-body-font-family: "League Spartan", sans-serif;
+  --bs-body-font-family: "League Spartan";
+}
+
+@import './layout/header.scss';
+@import './layout/footer.scss';
+
+@import './index.scss';
+@import './booking.scss';
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';

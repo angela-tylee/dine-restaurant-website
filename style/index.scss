@@ -1,0 +1,89 @@
+
+@font-face {
+  font-family: "League Spartan";
+  src: url('../public/font/League_Spartan/LeagueSpartan-VariableFont_wght.ttf') format(truetype);
+  font-weight: normal;
+  font-size: normal;
+}
+
+body {
+  --bs-body-font-family: "League Spartan";
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.container {
+  width: 77%;
+}
+
+header {
+  background-image: url(../public/images/homepage/hero-bg-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  color: white;
+  padding-block: 65px 198px;
+}
+
+.header-text {
+  width: 507px;
+  margin-top: 153px;
+}
+
+.section-intro > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 125px;
+}
+
+.section-intro-text-container {
+  display: flex;
+  align-items: center;
+}
+
+.section-menu-highlight {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-menu-highlight li {
+  display: flex;
+}
+
+.section-slide > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.section-ready-container {
+  background-image: url(../public/images/homepage/ready-bg-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-block: 88px;
+}
+
+.section-ready {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer {
+  background-color: #111111;
+  color: white;
+  padding-block: 78px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+section:nth-of-type(2) {
+  background-color: #111111;
+  color: white;
+  padding-block: 200px 120px;
+}
