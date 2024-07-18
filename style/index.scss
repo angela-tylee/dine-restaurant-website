@@ -19,6 +19,45 @@ body {
   width: 77%;
 }
 
+h1 {
+  // font-size: 80px;
+  font-weight: 400;
+  line-height: 80px;
+  letter-spacing: -1;
+}
+
+h2 {
+  // font-size: 48px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.5px;
+}
+
+h3 {
+  // font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.25px;
+}
+
+h4 {
+  // font-size: 17px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.p-1 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.p-2 {
+  font-size: 16px;
+  line-height: 26px;
+}
+
 header {
   background-image: url(../public/images/homepage/hero-bg-desktop.jpg);
   background-size: cover;
@@ -33,6 +72,10 @@ header {
   margin-top: 153px;
 }
 
+.section-intro-container {
+  position: relative;
+}
+
 .section-intro > div {
   display: flex;
   justify-content: space-between;
@@ -44,18 +87,71 @@ header {
   align-items: center;
 }
 
-.section-menu-highlight {
+.section-intro-container::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top: 0;
+  background-image: url('../public/images/patterns/pattern-curve-top-right.svg');
+  background-repeat: no-repeat;
+  background-position: center left;
+}
+
+.section-intro-container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  bottom: 0;
+  background-image: url('../public/images/patterns/pattern-curve-top-left.svg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.section-intro-1,
+.section-intro-2 {
+  position: relative;
+  // figure {
+  //   position: absolute;
+  // }
+}
+
+// .section-intro-1 figure {
+//   top: -20px
+// }
+
+
+.section-slide-container {
+  padding-block: 160px;
+}
+
+.section-highlight {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.section-menu-highlight li {
+.section-highlight li {
   display: flex;
+}
+
+.section-slide-text-container {
+  display: flex;
+  align-items: center;
 }
 
 .section-slide > div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.section-slide {
+  ul {
+    margin-top: 79px;
+    li {
+      margin-top: 12px;
+    }
+  }
 }
 
 .section-ready-container {
@@ -69,6 +165,15 @@ header {
 .section-ready {
   display: flex;
   justify-content: space-between;
+}
+
+.btn-book-table {
+  padding: 24px 54px;
+  border: solid 1px #FFFFFF;
+  background: #111111;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
 }
 
 footer {
