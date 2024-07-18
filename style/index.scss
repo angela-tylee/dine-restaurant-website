@@ -13,50 +13,53 @@ body {
     margin: 0;
     padding: 0;
   }
+
+  h1 {
+    font-size: 80px;
+    font-weight: 400;
+    line-height: 80px;
+    letter-spacing: -1;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -0.5px;
+  }
+
+  h3 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.25px;
+  }
+
+  h4 {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+  }
+
+  .p-1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  
+  .p-2 {
+    font-size: 16px;
+    line-height: 26px;
+  }
 }
 
 .container {
   width: 77%;
 }
 
-h1 {
-  // font-size: 80px;
-  font-weight: 400;
-  line-height: 80px;
-  letter-spacing: -1;
-}
 
-h2 {
-  // font-size: 48px;
-  font-weight: 700;
-  line-height: 48px;
-  letter-spacing: -0.5px;
-}
 
-h3 {
-  // font-size: 20px;
-  font-weight: 700;
-  line-height: 24px;
-  letter-spacing: -0.25px;
-}
-
-h4 {
-  // font-size: 17px;
-  font-weight: 400;
-  line-height: 28px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-}
-
-.p-1 {
-  font-size: 20px;
-  line-height: 30px;
-}
-
-.p-2 {
-  font-size: 16px;
-  line-height: 26px;
-}
 
 header {
   background-image: url(../public/images/homepage/hero-bg-desktop.jpg);
@@ -76,15 +79,37 @@ header {
   position: relative;
 }
 
-.section-intro > div {
+.section-intro-1,
+.section-intro-2 {
   display: flex;
   justify-content: space-between;
   gap: 125px;
 }
 
+// .section-intro-1 {
+//   justify-content: flex-end;
+// }
+
+// .section-intro-2 {
+//   justify-content: flex-start;
+// }
+
 .section-intro-text-container {
   display: flex;
   align-items: center;
+  width: 40%;
+}
+
+.section-intro-1 {
+  .section-intro-text-container {
+    padding-block: 177px 290px;
+  }
+}
+
+.section-intro-2 {
+  .section-intro-text-container {
+    padding-block: 290px 165px;
+  }
 }
 
 .section-intro-container::before {
@@ -109,18 +134,39 @@ header {
   background-position: bottom right;
 }
 
-.section-intro-1,
-.section-intro-2 {
-  position: relative;
-  // figure {
-  //   position: absolute;
-  // }
-}
-
-// .section-intro-1 figure {
-//   top: -20px
+// .section-intro-1,
+// .section-intro-2 {
+//   position: relative;
+//   .section-intro-img {
+//     position: absolute;
+//     box-shadow: 0px 75px 100px -50px hsla(219, 20, 28, 50.32%);
+//   }
 // }
 
+// .section-intro-1 .section-intro-img {
+//   top: -70px;
+//   left: 0;
+// }
+
+// .section-intro-2 .section-intro-img {
+//   right: 0;
+//   bottom: -80px;
+// }
+
+img {
+  display: block;
+}
+
+.section-intro-1 .section-intro-img {
+  position: relative;
+  top: -70px;
+  box-shadow: 0px 75px 100px -50px hsla(219, 20, 28, 50.32%);
+}
+
+.section-intro-2 .section-intro-img {
+  position: relative;
+  bottom: -80px;
+}
 
 .section-slide-container {
   padding-block: 160px;
@@ -129,10 +175,22 @@ header {
 .section-highlight {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 10%;
+  li {
+    display: flex;
+    .highlight-img {
+      z-index: 1;
+    }
+    .icon-divide {
+      position: relative;
+      left: -35px;
+      margin-top: 10px;
+    }
+  }
 }
 
-.section-highlight li {
-  display: flex;
+.icon-divide {
+  margin-bottom: 55px;
 }
 
 .section-slide-text-container {
